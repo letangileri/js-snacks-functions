@@ -5,13 +5,22 @@ buon pomeriggio se è pomeriggio (fino alle 17)
 e buonasera se è sera (oltre le 17)
 */
 
-const name = 'Mario';
+const username = 'Mario';
 
 
 // Dichiara la funzione qui.
-
+//arrow function
+const getGreeting = (user, time) => {
+    if ((time >= 4) && (time <= 13)){
+        return "Buongiorno " + user;
+    } else if ((time > 13) && (time <= 17)){
+        return "Buon pomeriggio " + user;
+    }
+    return "Buonasera " + user;
+}
 
 // Invoca la funzione qui e stampa il risultato in console
+console.log(getGreeting(username,14));
 
 
 
