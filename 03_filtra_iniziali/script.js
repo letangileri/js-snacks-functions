@@ -6,9 +6,9 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 // Dichiara la funzione qui.
 function getStringFromLetter(string, charUser){
-    let charOfString = "";
     let namesOfLetter = [];
     for (let i = 0; i < string.length; i++){
+        let charOfString = "";
         const valueString = string[i];
         charOfString = valueString.charAt(0);
         if (charOfString === charUser){
@@ -20,9 +20,9 @@ function getStringFromLetter(string, charUser){
 
 //arrow function
 const getStringFromLetter2 = (string, charUser) => {
-    let charOfString = "";
     let namesOfLetter = [];
     for (let i = 0; i < string.length; i++){
+        let charOfString = "";
         const valueString = string[i];
         charOfString = valueString.charAt(0);
         if (charOfString === charUser){

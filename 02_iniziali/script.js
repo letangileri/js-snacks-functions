@@ -3,7 +3,7 @@
 const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 // Dichiara la funzione qui.
-function getCharlistNames (names){
+function getCharListNames (names){
     let charsOfNames = [];
     let char = "";
     for (let i = 0; i < names.length; i++){
@@ -13,8 +13,29 @@ function getCharlistNames (names){
     }
     return charsOfNames;
 }
+function getCharListNames3 (names){
+    let charsOfNames = [];
+    for (let i = 0; i < names.length; i++){
+        const valueName = names[i];
+        charsOfNames.push(valueName.charAt(0));
+    }
+    return charsOfNames;
+}
+
+function getCharListNames4 (names){
+    let charsOfNames = [];
+    for (let i = 0; i < names.length; i++){
+        let char = "";
+        const valueName = names[i];
+        char = valueName.charAt(0);
+        charsOfNames.push(char);
+    }
+    return charsOfNames;
+}
+
+
 //arrow function
-const getCharlistNames2 = names =>{
+const getCharListNames2 = names =>{
     let charsOfNames = [];
     let char = "";
     for (let i = 0; i < names.length; i++){
@@ -27,10 +48,16 @@ const getCharlistNames2 = names =>{
 
 // Invoca la funzione qui e stampa il risultato in console
 
-const checkgetCharlistNames = getCharlistNames(names);
-console.log(checkgetCharlistNames);
+const checkgetCharListNames = getCharListNames(names);
+console.log(checkgetCharListNames);
+
+const checkgetCharListNames3 = getCharListNames3(names);
+console.log(checkgetCharListNames3);
+
+const checkgetCharListNames4 = getCharListNames4(names);
+console.log(checkgetCharListNames4);
 
 //arrow function
-console.log(getCharlistNames2(names));
+console.log(getCharListNames2(names));
 
 //Risultato atteso: ["A", "L", "M", "A", "G", "A"]

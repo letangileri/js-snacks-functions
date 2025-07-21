@@ -11,7 +11,7 @@ function getName (name){
 const getName2 = name => `Ciao ${name}`;
 
 // Invoca la funzione qui e stampa il risultato in console
-const callGetName = getName ("Mario");
+const callGetName = getName("Mario");
 console.log(callGetName);
 
 console.log(getName2("Mario"));
