@@ -21,15 +21,15 @@ function getVowels2 (string){
     for (let i = 0; i < string.length; i++){
         const valueString = string[i];
         let vowels = "aeiou";
-        console.log(vowels);
-        if (valueString.includes(vowels.toUpperCase())){
+        console.log(vowels.includes(valueString));
+        if (vowels.includes(valueString) || vowels.includes(valueString.toUpperCase())){
             console.log(vowels.toUpperCase());
             console.log(vowels);
             
             
             stringVowels += valueString;
             count += 1;
-            console.log(stringVowels);
+            console.log("sss " + stringVowels);
             
         }
     }
