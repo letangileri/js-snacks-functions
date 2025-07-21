@@ -10,7 +10,7 @@ for (let i = 0; i < word.length; i++){
         count += 1;
     }
 }
-console.log(count, stringVowels);
+// console.log(count, stringVowels);
 
 
 
@@ -20,12 +20,20 @@ function getVowels2 (string){
     let count = 0;
     for (let i = 0; i < string.length; i++){
         const valueString = string[i];
-        if (valueString === "a" || valueString === "e" || valueString === "i" || valueString === "o" || valueString === "u"){
+        let vowels = "aeiou";
+        console.log(vowels);
+        if (valueString.includes(vowels.toUpperCase())){
+            console.log(vowels.toUpperCase());
+            console.log(vowels);
+            
+            
             stringVowels += valueString;
             count += 1;
+            console.log(stringVowels);
+            
         }
     }
-    return count + stringVowels;
+    return `${count} ${stringVowels}`;
 }
 
 //arrow function
@@ -34,12 +42,13 @@ const getVowels = string => {
     let count = 0;
     for (let i = 0; i < string.length; i++){
         const valueString = string[i];
-        if (valueString === "a" || valueString === "e" || valueString === "i" || valueString === "o" || valueString === "u"){
+        let vowels = "aeiou"
+        if (valueString.includes(vowels.toUpperCase())){
             stringVowels += valueString;
             count += 1;
         }
     }
-    return count + stringVowels;
+    return `${count} ${stringVowels}`;
 }
 // Invoca la funzione qui e stampa il risultato in console
 
