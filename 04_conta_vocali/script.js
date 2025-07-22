@@ -1,6 +1,6 @@
 /* Scrivi una funzione che accetti una stringa e restituisca il numero di vocali contenute al suo interno */
 
-const word = 'javascript';
+const word = 'jAvascrIpt';
 let stringVowels = "";
 let count = 0;
 for (let i = 0; i < word.length; i++){
@@ -22,10 +22,11 @@ function getVowels2 (string){
         const valueString = string[i];
         let vowels = "aeiou";
         console.log(vowels.includes(valueString));
-        if (vowels.includes(valueString) || vowels.includes(valueString.toUpperCase())){
-            console.log(vowels.toUpperCase());
-            console.log(vowels);
-            
+        if (vowels.includes(valueString.toLowerCase())){
+            console.log("1" + valueString.toLowerCase());
+            console.log("2" +vowels);
+            console.log("3" +valueString);
+
             
             stringVowels += valueString;
             count += 1;
